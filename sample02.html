@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SAMPLE 02 - canhamoJS v0.01</title>
+		<script src="canhamoJS.js"></script>
+		<script>
+			function sample(){
+				var myText = "";
+				myText  = "Hello Guest Welcome to this site. <br>"
+				myText += "We detected that your operating system is <b>"+canhamoJS.os+"</b> and the architecture of your CPU's is <b>"+canhamoJS.cpu + "</b>. <br>";
+				myText += "Your standard language is <b>"+canhamoJS.language+"</b>. Your internet browser is <b>"+canhamoJS.userAgent+"</b>. "
+				
+				document.getElementById("sample").innerHTML = myText;
+			}
+		</script>
+	</head>
+	<body onLoad="sample()">
+		<h1>SAMPLE 02 - canhamoJS v0.01</h1>
+		<h4>
+			This example demonstrates how to initialize the object and use canhamoJS  of their basic properties.
+		</h4>
+		<hr>
+		<div id="sample">
+		
+		</div>
+		<hr>
+	</body>
+</html>
